@@ -1,6 +1,6 @@
-#complexity-comparaison-tests.
+# complexity-comparaison-tests.
 
-Hello *-*
+Hello **-**
 
 Well the program gonna take you to the ##sorts world or to the Hanoi Tower world
 
@@ -12,7 +12,7 @@ it will creat too a log file contains the original Array and after the
 
 sorts algorithms and the execution time of each algo 
 
-##Install:
+## Install:
 
 link to download GNUPlot --> https://sourceforge.net/projects/gnuplot/
 
