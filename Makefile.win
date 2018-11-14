@@ -1,0 +1,70 @@
+# Project: ComplexityComparaisonTests
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o remplissage.o affichage.o triSelectif.o bull.o insertion.o mergeSort.o towerOfHanoi.o triRapide.o copieElemnts.o affichageExcel.o nombreTableau.o affichageLog.o start.o afficheHanoieExcel.o
+LINKOBJ  = main.o remplissage.o affichage.o triSelectif.o bull.o insertion.o mergeSort.o towerOfHanoi.o triRapide.o copieElemnts.o affichageExcel.o nombreTableau.o affichageLog.o start.o afficheHanoieExcel.o
+LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW64/lib" -L"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = WednesdayProject.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+remplissage.o: remplissage.cpp
+	$(CPP) -c remplissage.cpp -o remplissage.o $(CXXFLAGS)
+
+affichage.o: affichage.cpp
+	$(CPP) -c affichage.cpp -o affichage.o $(CXXFLAGS)
+
+triSelectif.o: triSelectif.cpp
+	$(CPP) -c triSelectif.cpp -o triSelectif.o $(CXXFLAGS)
+
+bull.o: bull.cpp
+	$(CPP) -c bull.cpp -o bull.o $(CXXFLAGS)
+
+insertion.o: insertion.cpp
+	$(CPP) -c insertion.cpp -o insertion.o $(CXXFLAGS)
+
+mergeSort.o: mergeSort.cpp
+	$(CPP) -c mergeSort.cpp -o mergeSort.o $(CXXFLAGS)
+
+towerOfHanoi.o: towerOfHanoi.cpp
+	$(CPP) -c towerOfHanoi.cpp -o towerOfHanoi.o $(CXXFLAGS)
+
+triRapide.o: triRapide.cpp
+	$(CPP) -c triRapide.cpp -o triRapide.o $(CXXFLAGS)
+
+copieElemnts.o: copieElemnts.cpp
+	$(CPP) -c copieElemnts.cpp -o copieElemnts.o $(CXXFLAGS)
+
+affichageExcel.o: affichageExcel.cpp
+	$(CPP) -c affichageExcel.cpp -o affichageExcel.o $(CXXFLAGS)
+
+nombreTableau.o: nombreTableau.cpp
+	$(CPP) -c nombreTableau.cpp -o nombreTableau.o $(CXXFLAGS)
+
+affichageLog.o: affichageLog.cpp
+	$(CPP) -c affichageLog.cpp -o affichageLog.o $(CXXFLAGS)
+
+start.o: start.cpp
+	$(CPP) -c start.cpp -o start.o $(CXXFLAGS)
+
+afficheHanoieExcel.o: afficheHanoieExcel.cpp
+	$(CPP) -c afficheHanoieExcel.cpp -o afficheHanoieExcel.o $(CXXFLAGS)
